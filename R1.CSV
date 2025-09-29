@@ -1,0 +1,11 @@
+place,rainfall,temperature,weather,yield,SoilQuality
+Punjab,850,23,sunny,3.4,7
+Haryana,780,22,cloudy,3.6,6
+Kerala,2200,27,rainy,4.5,9
+TamilNadu,900,26,sunny,3.8,8
+Rajasthan,300,30,cloudy,2.1,5
+Assam,1800,25,rainy,4.0,8
+Gujarat,500,28,sunny,2.9,6
+Maharashtra,700,24,cloudy,3.3,7
+UP,1000,21,rainy,3.7,6
+MP,600,23,sunny,3.0,7

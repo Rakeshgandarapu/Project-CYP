@@ -1,0 +1,11 @@
+place,rainfall,temperature,weather,yield,SoilQuality
+Bihar,950,24,cloudy,3.2,6
+Odisha,720,23,sunny,3.5,7
+Goa,2100,28,rainy,4.7,9
+AndhraPradesh,850,27,sunny,4.0,8
+Chhattisgarh,400,31,cloudy,2.3,5
+Meghalaya,1900,26,rainy,4.2,8
+Jharkhand,550,29,sunny,2.8,6
+Telangana,680,25,cloudy,3.1,7
+WestBengal,1050,22,rainy,3.9,6
+Uttarakhand,620,24,sunny,3.1,7

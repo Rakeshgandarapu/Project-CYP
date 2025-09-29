@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌾 Unified Crop Yield Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+  <header>
+    <h2>🌾 CROP YIELD PREDICTION USING RNN, LSTM, AND FEEDFORWARD NEURAL NETWORKS</h2>
+  </header>
+
+  <main class="container">
+    <div class="action-buttons">
+      <label for="fileInput" class="btn-label">Upload Agriculture Dataset</label>
+      <input type="file" id="fileInput" accept=".csv" onchange="handleUpload(event)" style="display:none;" />
+      <button class="btn-green" onclick="processData()">Preprocess Dataset</button>
+      <button class="btn-green" onclick="trainModel('RNN')">Run RNN Algorithm</button>
+      <button class="btn-green" onclick="trainModel('LSTM')">Run LSTM Algorithm</button>
+      <button class="btn-green" onclick="predictWithFNN()">Run Feedforward Neural Network</button>
+      <button class="btn-green" onclick="displayChart()">Show Accuracy Comparison</button>
+      <button class="btn-green" onclick="location.href='states.html'">TOP States Crop Yield Production</button>
+
+    </div>
+
+    <div id="fileNameDisplay"></div>
+    <div id="output">Upload your dataset...</div>
+    <table id="dataTable"></table>
+    <div id="result"></div>
+
+    <div id="chartContainer">
+      <canvas id="accuracyChart" width="800" height="400"></canvas>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
